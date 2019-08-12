@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-ENV SONAR_SCANNER_VERSION 3.3.0.1492
+ENV SONAR_SCANNER_VERSION 4.0.0.1744
 
 COPY sonar-scanner-run.sh /usr/bin
 
