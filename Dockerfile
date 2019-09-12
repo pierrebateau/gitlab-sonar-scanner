@@ -14,7 +14,7 @@ RUN \
     mv -fv /tmp/sonar-scanner-${SONAR_SCANNER_VERSION}/lib/* /usr/lib
 
 RUN \
-    apk add --no-cache nodejs bash git openssh && \
+    apk add --no-cache nodejs bash git openssh curl && \
     ls -lha /usr/bin/sonar* && \
     ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner
 
